@@ -1,0 +1,32 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  reconnect: false
+  # database: bb_development_<%= `git symbolic-ref HEAD 2>/dev/null`.chomp.sub('refs/heads/', '').gsub(/\W/, '_')[0..20] %>
+  database: lstio_dev
+  pool: 5
+  username: jason
+  password: 
+  template: template0
+
+# development:
+#   adapter: postgresql
+#   encoding: unicode
+#   reconnect: false
+#   database: scoreboard_development
+#   pool: 5
+#   username: jason
+#   password: 
+#   # socket: /tmp/mysql.sock
+#   template: template0
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  reconnect: false
+  database: lstio_test
+  pool: 5
+  username: jason
+  password: 
+  # socket: /tmp/mysql.sock
+  template: template0
